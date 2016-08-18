@@ -5,8 +5,9 @@ Boilerplate for fast creating both: React module & React web application;
 Include:
 
 * React, React-DOM
+* Babel,
 * Webpack, Webpack-hot-reload
-    * Available import css, scss
+    * Available import css, scss, sass
     * Post css interpreter
 
 

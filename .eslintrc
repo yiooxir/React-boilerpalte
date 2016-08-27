@@ -1,19 +1,28 @@
 {
-  "ecmaFeatures": {
-    "jsx": true,
-    "modules": true
-  },
+  "eslintignore": [
+    "build",
+    "node_modules"
+  ],
+  "parser": "babel-eslint",
+  "extends": "airbnb",
   "env": {
     "browser": true,
+    "mocha": true,
     "node": true
   },
-  "parser": "babel-eslint",
+  "globals": {
+    "VERSION": true
+  },
   "rules": {
-    "quotes": [2, "single"],
-    "strict": [2, "never"],
     "react/jsx-uses-react": 2,
     "react/jsx-uses-vars": 2,
-    "react/react-in-jsx-scope": 2
+    "react/react-in-jsx-scope": 0,
+    "react/jsx-quotes": 0,
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "indent": [2, 2],
+    "comma-dangle": 0,
+    "no-shadow": 0,
+    "no-else-return": 0
   },
   "plugins": [
     "react"
